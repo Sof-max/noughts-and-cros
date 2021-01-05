@@ -11,13 +11,13 @@ def line(board):
 
 def start_input(player_symbol):
     act = False
-    while not act
-    player_answer = input('Where to put' + player_symbol + ' ?')
-    try:
-    player_answer = int(player_answer)
-    except:
-        print('Are you sure you entered the number?')
-        continue
+    while not act:
+        player_answer = input("Where to put" + player_symbol + " ?")
+        try:
+            player_answer = int(player_answer)
+        except:
+            print('Are you sure you entered the number?')
+            continue
     if player_answer >= 1 and player_answer <= 9:
         if (str(board[player_answer - 1])not in "XO"):
             board[player_answer - 1] = player_symbol
