@@ -26,3 +26,8 @@ def start_input(player_symbol):
             print("This place is already occupied.")
     else:
         print("Enter  number ftom1 to 9.")
+
+
+def checking_field(board):
+    possible_option = ((0, 1, 2), (3, 4, 5), (6, 7, 8),
+                       (0, 3, 6), (1, 4, 7), (2, 5, 8), (0, 4, 8), (2, 4, 6)),
