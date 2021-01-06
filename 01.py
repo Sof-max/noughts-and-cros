@@ -46,3 +46,16 @@ def main(board):
             start_input("X")
         else:
             start_input("O")
+        counter += 1
+        if counter > 4:
+            result = checking_field(board)
+            if result:
+                print(result, "won")
+                result = True
+                break
+        if counter == 9:
+            print("Draw")
+    start_input(board)
+
+
+main(board)
