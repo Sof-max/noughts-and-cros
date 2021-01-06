@@ -35,3 +35,14 @@ def checking_field(board):
         if board[each[0]] == board[each[1]] == board[each[2]]:
             return board[each[0]]
     return False
+
+
+def main(board):
+    counter = 0
+    win = False
+    while not win:
+        line(board)
+        if counter % 2 == 0:
+            start_input("X")
+        else:
+            start_input("O")
